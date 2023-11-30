@@ -1,7 +1,7 @@
-package br.fepi.socialbooks.repository;
+package br.fepi.apicrud.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import br.fepi.socialbooks.domain.Departamento;
+import br.fepi.apicrud.domain.Departamento;
 
 
 public interface DepartamentosRepository extends JpaRepository<Departamento, Long> {

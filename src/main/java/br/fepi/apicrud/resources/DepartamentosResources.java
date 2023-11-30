@@ -1,4 +1,4 @@
-package br.fepi.socialbooks.resources;
+package br.fepi.apicrud.resources;
 
 public class DepartamentosResources {
     

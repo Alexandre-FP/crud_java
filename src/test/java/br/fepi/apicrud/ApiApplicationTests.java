@@ -1,13 +1,13 @@
-package br.fepi.socialbooks;
+package br.fepi.apicrud;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApiApplication {
+class ApiApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void contextLoads() { 
 	}
 
 }

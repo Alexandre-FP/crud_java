@@ -1,6 +1,5 @@
-package br.fepi.socialbooks.domain;
+package br.fepi.apicrud.domain;
 
-import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -26,10 +25,7 @@ public class Secretaria {
 	
 	@JsonInclude(Include.NON_NULL)
 	private String sigla;
-	
-	public Livro (String nome) {
-		this.nome = nome;
-	}
+
 	@JsonInclude(Include.NON_NULL)
 	@OneToMany(mappedBy = "secretaria")
 	private List<Departamento> departamentos;
@@ -54,9 +50,9 @@ public class Secretaria {
 		return sigla;
 	}
 
-	public void setAutor(String sigla) {
+	public void setSigla(String sigla) {
 		this.sigla = sigla;
-	}
+	} 
 
 	public List<Departamento> getDepartamentos() {
 		return departamentos;

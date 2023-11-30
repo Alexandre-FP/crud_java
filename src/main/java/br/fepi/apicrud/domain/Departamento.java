@@ -1,6 +1,4 @@
-package br.fepi.socialbooks.domain;
-
-import java.util.Date;
+package br.fepi.apicrud.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -10,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnore; 
 
 @Entity
 public class Departamento {
@@ -41,6 +39,14 @@ public class Departamento {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public Secretaria getSecretaria() {
+		return secretaria;
+	}
+
+	public void setSecretaria(Secretaria secretaria) {
+		this.secretaria = secretaria; 
 	}
 	
 }
