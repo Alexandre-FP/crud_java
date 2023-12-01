@@ -48,7 +48,7 @@ public class SecretariasResources {
 	}
 
 	@DeleteMapping(value = "/{id}")
-	public void deletar(@PathVariable(value = "id")Long id){
+	public void deletar(@PathVariable(value = "id")Long id){ 
 		secretariasRepository.deleteById(id); 
 	}
 

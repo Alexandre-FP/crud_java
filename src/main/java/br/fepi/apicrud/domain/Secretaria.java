@@ -28,8 +28,7 @@ public class Secretaria {
 
 	@JsonInclude(Include.NON_NULL)
 	@OneToMany(mappedBy = "secretaria")
-	private List<Departamento> departamentos;
-
+	 
 	public Long getId() {
 		return id;
 	}
